@@ -7,12 +7,14 @@ import NotFound from './components/NotFound';
 import About from './components/About';
 import Contact from './components/Contact';
 import Policy from './components/Policy';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
       <Router>
       <TopBar/>
+      <NavBar/>
       <Routes>
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
